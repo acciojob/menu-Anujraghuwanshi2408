@@ -26,12 +26,12 @@ console.log(data)
         onClick={filterItems}>All
         </button>
         
-        <button  id="filter-btn-1"
+        <button  
          onClick={filterItems} data-test-id="menu-item-breakfast">Breakfast
         </button>
-        <button  id="filter-btn-2" onClick={filterItems}  data-test-id="menu-item-lunch">Lunch
+        <button   onClick={filterItems}  data-test-id="menu-item-lunch">Lunch
         </button>
-        <button  id="filter-btn-3"
+        <button  
          onClick={filterItems}  data-test-id="menu-item-shakes">Shakes
         </button>
         
