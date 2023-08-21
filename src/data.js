@@ -1,4 +1,4 @@
-const SectionData = [
+const data = [
   {
     id: 1,
     title: 'buttermilk pancakes',
@@ -74,4 +74,4 @@ const SectionData = [
 ]
 
 
-export default SectionData
+export default data

@@ -1,57 +1,31 @@
 h1 {
     color: #27aedb;
     text-align: center;
-    }
+ }
     
-
+ 
 button{
     color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-
-#main{
+ 
+.images{
+    width:100px;
+    height: 100px;
+}
+.itemcontainer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-#main .btn{
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    
-}
-#main .btn button{
-    cursor: pointer;
-    
-}
-.items{
-    display: grid;
-    grid-template-columns: repeat(2 , 40%);
-    justify-content: center;
-    gap: 2rem;
-
+    flex-wrap: wrap;
 }
 .item{
-   border: 0.5px solid black;
-   padding: 1rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: .5rem;
-   cursor: pointer;
+    display: flex;
+    width: 700px;
+    margin-right: 100px;
+    margin-bottom: 50px;
 }
-.img {
-    border: 1px solid brown;
-}
-.img img{
-    width: 100%;
-}
-
-.dishes{
+.top{
     display: flex;
     justify-content: space-between;
 }
- 

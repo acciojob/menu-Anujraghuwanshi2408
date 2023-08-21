@@ -17,16 +17,25 @@ module.exports = {
                 }
             },
             {
+                
+                test:/\.(jpe?g|png|gif)$/i,
+                use:[
+             {
+                loader:'file-loader',
+                options:{
+                  name : '[name].[ext]',
+                  outputPath:'images',
+                },
+             },
+             
+            ],
+         },
+         {
+             
                 test: /\.css$/,
-                use: [
-                    {
-                        loader: 'style-loader',
-                    },
-                    {
-                        loader: 'css-loader',
-                    },
-                ]
-            },
+                use: ['style-loader', 'css-loader'],
+              
+         },
         ],
     },
     plugins: [
