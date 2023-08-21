@@ -19,13 +19,13 @@ console.log(data)
         }
       }
   return (
-    <div className="main">
+    <div id="main">
       <h1>Our Menu</h1>
       <div className="btn">
         <button onClick={filterItems}>All</button>
-        <button onClick={filterItems}>Breakfast</button>
-        <button onClick={filterItems}>Lunch</button>
-        <button onClick={filterItems}>Shakes</button>
+        <button onClick={filterItems} id="filter-btn-1">Breakfast</button>
+        <button onClick={filterItems} id="filter-btn-2">Lunch</button>
+        <button onClick={filterItems} id="filter-btn-3">Shakes</button>
       </div>
       <div className="items">
         {data.map((element) => (
