@@ -1,2 +1,50 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React, { useState } from "react";
+import SectionData from "./data/SectionData";
+const App = () => {
 
+  const [data , setData] = useState(SectionData)
+console.log(data)
+      function filterItems(e){
+        let filter = e.target.innerText.toLowerCase();
+        if(filter === "all"){
+          setData(SectionData)
+        }
+        else{
+          let filterArray = SectionData.filter(element => {
+             if(element.category === filter){
+              return element
+             }
+          })
+          setData(filterArray)
+        }
+      }
+  return (
+    <div className="main">
+      <h1>Our Menu</h1>
+      <div className="btn">
+        <button onClick={filterItems}>All</button>
+        <button onClick={filterItems}>Breakfast</button>
+        <button onClick={filterItems}>Lunch</button>
+        <button onClick={filterItems}>Shakes</button>
+      </div>
+      <div className="items">
+        {data.map((element) => (
+          <div className="item">
+            <div className="img">
+              <img src="element.img"></img>
+            </div>
+            <div className="item-desc">
+              <div className="dishes">
+                <h2>{element.title}</h2>
+                <p>{element.price}</p>
+              </div>
+              <div className="desc">{element.desc}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default App;
