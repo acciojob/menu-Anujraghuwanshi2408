@@ -22,15 +22,17 @@ console.log(data)
     <div id="main">
       <h1>Our Menu</h1>
       <div className="btn">
-        <button onClick={filterItems}>All</button>
-        <div  id="filter-btn-1">
-        <button onClick={filterItems} data-test-id="menu-item-breakfast">Breakfast</button>
+        <div
+        onClick={filterItems}>All
         </div>
-        <div  id="filter-btn-2">
-        <button onClick={filterItems}  data-test-id="menu-item-lunch">Lunch</button>
+        
+        <div  id="filter-btn-1"
+         onClick={filterItems} data-test-id="menu-item-breakfast">Breakfast
         </div>
-        <div  id="filter-btn-3">
-        <button onClick={filterItems}  data-test-id="menu-item-shakes">Shakes</button>
+        <div  id="filter-btn-2" onClick={filterItems}  data-test-id="menu-item-lunch">Lunch
+        </div>
+        <div  id="filter-btn-3"
+         onClick={filterItems}  data-test-id="menu-item-shakes">Shakes
         </div>
         
         
