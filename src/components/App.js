@@ -22,18 +22,18 @@ console.log(data)
     <div id="main">
       <h1>Our Menu</h1>
       <div className="btn">
-        <div
+        <p
         onClick={filterItems}>All
-        </div>
+        </p>
         
-        <div  id="filter-btn-1"
+        <p  id="filter-btn-1"
          onClick={filterItems} data-test-id="menu-item-breakfast">Breakfast
-        </div>
-        <div  id="filter-btn-2" onClick={filterItems}  data-test-id="menu-item-lunch">Lunch
-        </div>
-        <div  id="filter-btn-3"
+        </p>
+        <p  id="filter-btn-2" onClick={filterItems}  data-test-id="menu-item-lunch">Lunch
+        </p>
+        <p  id="filter-btn-3"
          onClick={filterItems}  data-test-id="menu-item-shakes">Shakes
-        </div>
+        </p>
         
         
       </div>
