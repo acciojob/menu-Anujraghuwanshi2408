@@ -3,6 +3,7 @@ import SectionData from "./data/SectionData";
 const App = () => {
 
   const [data , setData] = useState(SectionData)
+  // const[id , setId] = useState("")
 console.log(data)
       function filterItems(e){
         let filter = e.target.innerText.toLowerCase();
@@ -17,6 +18,7 @@ console.log(data)
           })
           setData(filterArray)
         }
+        // setId()
       }
   return (
     <div id="main">
@@ -37,7 +39,7 @@ console.log(data)
         
         
       </div>
-      <div className="items">
+      <div className="items" id="filter-btn-3">
         {data.map((element) => (
           <div className="item">
             <div className="img">
