@@ -25,21 +25,21 @@ console.log(data)
       <h1>Our Menu</h1>
       <div className="btn">
         <div
-        onClick={filterItems}>All
+        onClick={filterItems} >All
         </div>
         
         <div  
-         onClick={filterItems} data-test-id="menu-item-breakfast">Breakfast
+         onClick={filterItems} id="filter-btn-1" data-test-id="menu-item-breakfast">Breakfast
         </div>
-        <div   onClick={filterItems}  data-test-id="menu-item-lunch">Lunch
+        <div   onClick={filterItems} id="filter-btn-2" data-test-id="menu-item-lunch">Lunch
         </div>
         <div  
-         onClick={filterItems}  data-test-id="menu-item-shakes">Shakes
+         onClick={filterItems} id="filter-btn-3"  data-test-id="menu-item-shakes">Shakes
         </div>
         
         
       </div>
-      <div className="items" id="filter-btn-3">
+      <div className="items" >
         {data.map((element) => (
           <div className="item">
             <div className="img">
