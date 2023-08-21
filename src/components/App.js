@@ -23,9 +23,17 @@ console.log(data)
       <h1>Our Menu</h1>
       <div className="btn">
         <button onClick={filterItems}>All</button>
-        <button onClick={filterItems} id="filter-btn-1" data-test-id="menu-item-breakfast">Breakfast</button>
-        <button onClick={filterItems} id="filter-btn-2" data-test-id="menu-item-lunch">Lunch</button>
-        <button onClick={filterItems} id="filter-btn-3" data-test-id="menu-item-shakes">Shakes</button>
+        <div  id="filter-btn-1">
+        <button onClick={filterItems} data-test-id="menu-item-breakfast">Breakfast</button>
+        </div>
+        <div  id="filter-btn-2">
+        <button onClick={filterItems}  data-test-id="menu-item-lunch">Lunch</button>
+        </div>
+        <div  id="filter-btn-3">
+        <button onClick={filterItems}  data-test-id="menu-item-shakes">Shakes</button>
+        </div>
+        
+        
       </div>
       <div className="items">
         {data.map((element) => (
